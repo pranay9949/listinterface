@@ -124,7 +124,10 @@ class Tasks extends Component{
    }
     render(){
       const {taskObj,text,assignObj}=this.state
-        console.log(assignObj)
+       const pendingCount = assignObj.filter((item)=>(item.status=="Pending"))
+       const progressCount = assignObj.filter((item)=>(item.status=="In Progress"))
+       const completedCount = assignObj.filter((item)=>(item.status=="Completed"))
+       console.log(completedCount.length)
         return(
           <div>
            <nav className="nav-item">
@@ -174,7 +177,7 @@ class Tasks extends Component{
             ))}
             </div>
      
-            <TaskSummary assignObj={assignObj}/>
+            {assignObj.length>0 &&<TaskSummary pendingCount={pendingCount.length} progressCount={progressCount.length} completedCount={completedCount.length}/>}
 
            </div>
            
