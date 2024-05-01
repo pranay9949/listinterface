@@ -1,0 +1,57 @@
+.item{
+    max-width: 500px;
+    min-height: 100px;
+    background-color:#e2d9cd ;
+    border-radius: 10px;
+    padding: 10px;
+   margin-block: 30px;
+    word-wrap: break-word;
+    margin-inline: 30px;
+  
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.bg-pending{
+    background-color: red;
+}
+.bg-progress{
+    background-color: rgb(180, 180, 39);
+}
+.bg-completed{
+    background-color: rgb(21, 138, 21);
+}
+.progress-btns{
+   border:none;
+   border-radius: 10px;
+   width: 100px;
+   margin-inline: 20px;
+   margin-block: 8px;
+   height: 25px;
+   font-size: 14px;
+}
+.date-item{
+    display: flex;
+    margin-top: auto;
+   
+    justify-content: space-between;
+   
+   
+    margin:10px;
+}
+.img-del{
+    width:28px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+   
+}
+span{
+    color: rgb(70, 65, 65);
+    text-decoration: underline;
+}

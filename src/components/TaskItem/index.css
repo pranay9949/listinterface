@@ -1,0 +1,31 @@
+.items{
+    width: 200px;
+    min-height: 100px;
+    background-color:#e2d9cd ;
+    border-radius: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    margin-inline: 30px;
+    margin-block: 30px;
+    position: relative;
+}
+.para{
+    font-size: 22px;
+}
+.date-obj{
+    font-size: 12px;
+    color:gray;
+    margin-right: 50px;
+}
+.bottom-cont{
+    display: flex;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+   
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.img-element{
+    width: 28px;
+}
